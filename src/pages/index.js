@@ -37,7 +37,7 @@ const features = [
     description: (
       <>
         Run code with your own debugging flags easily. Input can be from the
-        keyboard or from a test case file.
+        keyboard or from a test case file
       </>
     ),
     to: "docs/interviewer/debug",
