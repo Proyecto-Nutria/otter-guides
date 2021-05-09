@@ -16,7 +16,7 @@ const features = [
         with your favorite template,
       </>
     ),
-    to: "interviewer/clone",
+    to: "docs/interviewer/clone",
   },
   {
     title: "Test",
@@ -29,7 +29,7 @@ const features = [
         Supported Veredicts: <b>AC, WA, TLE, RTE, CE</b>
       </>
     ),
-    to: "interviewer/test",
+    to: "docs/interviewer/test",
   },
   {
     title: "Debug",
@@ -40,7 +40,7 @@ const features = [
         keyboard or from a test case file.
       </>
     ),
-    to: "interviewer/debug",
+    to: "docs/interviewer/debug",
   },
   {
     title: "Add Test Cases",
@@ -51,7 +51,7 @@ const features = [
         for the input and the expected output
       </>
     ),
-    to: "interviewer/add-test-case",
+    to: "docs/interviewer/add-test-case",
   },
   {
     title: "Submit",
@@ -62,7 +62,7 @@ const features = [
         command.
       </>
     ),
-    to: "interviewer/submit",
+    to: "docs/interviewer/submit",
   },
   {
     title: "Create Files With Template",
@@ -70,7 +70,7 @@ const features = [
     description: (
       <>Create source files with the corresponding template loaded</>
     ),
-    to: "interviewer/create",
+    to: "docs/interviewer/create",
   },
   {
     title: "Flat File Structure",
@@ -78,13 +78,13 @@ const features = [
     description: (
       <>
         Having a flat file structure gives us <b>speed!</b>. See{" "}
-        <a href="interviewer/clone#why-flat-file-structure">
+        <a href="docs/interviewer/clone#why-flat-file-structure">
           Why Flat File Structure?
         </a>
         .
       </>
     ),
-    to: "interviewer/clone#file-structure",
+    to: "docs/interviewer/clone#file-structure",
   },
   {
     title: "Vim / Neovim Plugin",
@@ -98,7 +98,7 @@ const features = [
         plugin to boost their speed even more.
       </>
     ),
-    to: "interviewee/vim",
+    to: "docs/interviewee/vim",
     className: styles.vim_img,
   },
 ];
@@ -132,22 +132,13 @@ export default function Home() {
             <h1
               className={clsx(styles.boldInGreen, styles.title, "hero__title")}
             >
-              <b>cpb</b>ooster
+              <b>otter</b> guides
             </h1>
-            <p
-              className={clsx(
-                styles.boldInGreen,
-                styles.subtitle,
-                "hero__subtitle"
-              )}
-            >
-              otter-guides
-            </p>
             <div className={styles.buttons}>
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
-                  src="https://ghbtns.com/github-btn.html?user=searleser97&amp;repo=cpbooster&amp;type=star&amp;count=true&amp;size=large"
+                  src="https://ghbtns.com/github-btn.html?user=proyecto-nutria&amp;repo=otter-guides&amp;type=star&amp;count=true&amp;size=large"
                   width={160}
                   height={30}
                   title="GitHub Stars"
@@ -156,7 +147,7 @@ export default function Home() {
               <div style={{ height: "18px" }} />
               <Link
                 className={clsx(styles.getStartedButton)}
-                to={useBaseUrl("interviewee/About")}
+                to={useBaseUrl("docs/interviewee/About")}
               >
                 Get Started
               </Link>

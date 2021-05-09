@@ -19,13 +19,13 @@ module.exports = {
         {
           type: "doc",
           position: "left",
-          docId: "clone",
+          docId: "interviewer/clone",
           label: "Interviewer",
         },
         {
           type: "doc",
           position: "left",
-          docId: "about",
+          docId: "interviewee/about",
           label: "Interviewee",
         },
         {
@@ -44,6 +44,11 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          // Please change this to your repo.
+          editUrl: "https://github.com/proyecto-nutria/otter-guides",
+        },
         interviewer: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
