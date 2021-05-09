@@ -16,7 +16,7 @@ const features = [
         with your favorite template,
       </>
     ),
-    to: "docs/clone",
+    to: "interviewer/clone",
   },
   {
     title: "Test",
@@ -29,7 +29,7 @@ const features = [
         Supported Veredicts: <b>AC, WA, TLE, RTE, CE</b>
       </>
     ),
-    to: "docs/test",
+    to: "interviewer/test",
   },
   {
     title: "Debug",
@@ -40,7 +40,7 @@ const features = [
         keyboard or from a test case file.
       </>
     ),
-    to: "docs/debug",
+    to: "interviewer/debug",
   },
   {
     title: "Add Test Cases",
@@ -51,7 +51,7 @@ const features = [
         for the input and the expected output
       </>
     ),
-    to: "docs/add-test-case",
+    to: "interviewer/add-test-case",
   },
   {
     title: "Submit",
@@ -62,7 +62,7 @@ const features = [
         command.
       </>
     ),
-    to: "docs/submit",
+    to: "interviewer/submit",
   },
   {
     title: "Create Files With Template",
@@ -70,7 +70,7 @@ const features = [
     description: (
       <>Create source files with the corresponding template loaded</>
     ),
-    to: "docs/create",
+    to: "interviewer/create",
   },
   {
     title: "Flat File Structure",
@@ -78,13 +78,13 @@ const features = [
     description: (
       <>
         Having a flat file structure gives us <b>speed!</b>. See{" "}
-        <a href="docs/clone#why-flat-file-structure">
+        <a href="interviewer/clone#why-flat-file-structure">
           Why Flat File Structure?
         </a>
         .
       </>
     ),
-    to: "docs/clone#file-structure",
+    to: "interviewer/clone#file-structure",
   },
   {
     title: "Vim / Neovim Plugin",
@@ -98,7 +98,7 @@ const features = [
         plugin to boost their speed even more.
       </>
     ),
-    to: "docs/vim",
+    to: "interviewee/vim",
     className: styles.vim_img,
   },
 ];
@@ -156,7 +156,7 @@ export default function Home() {
               <div style={{ height: "18px" }} />
               <Link
                 className={clsx(styles.getStartedButton)}
-                to={useBaseUrl("docs/About")}
+                to={useBaseUrl("interviewee/About")}
               >
                 Get Started
               </Link>

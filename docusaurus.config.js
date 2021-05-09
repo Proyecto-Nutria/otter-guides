@@ -19,8 +19,14 @@ module.exports = {
         {
           type: "doc",
           position: "left",
+          docId: "clone",
+          label: "Interviewer",
+        },
+        {
+          type: "doc",
+          position: "left",
           docId: "about",
-          label: "Docs",
+          label: "Interviewee",
         },
         {
           href: "https://github.com/proyecto-nutria/otter-guides",
@@ -38,17 +44,20 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        docs: {
+        interviewer: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/proyecto-nutria/otter-guides",
+        },
+        interviewee: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          // Please change this to your repo.
+          editUrl: "https://github.com/proyecto-nutria/otter-guides",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+          editUrl: "https://github.com/proyecto-nutria/otter-guides",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

@@ -1,11 +1,5 @@
 module.exports = {
-  docs: [
-    {
-      type: "category",
-      label: "Introduction",
-      items: ["about", "cheatsheet"],
-      collapsed: false,
-    },
+  interviewer: [
     {
       type: "category",
       label: "Getting Started",
@@ -26,6 +20,14 @@ module.exports = {
         "add-language-support",
         "add-online-judge-support",
       ],
+      collapsed: false,
+    },
+  ],
+  interviewee: [
+    {
+      type: "category",
+      label: "Introduction",
+      items: ["about", "cheatsheet"],
       collapsed: false,
     },
     {
