@@ -105,7 +105,7 @@ $ editor [directory]
 ```
 
 If your editor does not support this format but has another way to open a directory, you could take a look at
-"[How to add an editor](/docs/add-editor-support)"
+"[How to add an editor](/docs/interviewer/add-editor-support)"
 
 #### Examples
 
@@ -129,7 +129,7 @@ since `code` is the command that is used to execute _vscode_ from the terminal.
 
 :::note
 **Terminal Emulator** support is currently limited to this [List of supported terminals](#list-of-supported-terminals).
-Visit the section "[How to add an editor](/docs/add-editor-support)" if you wish to contribute and add support
+Visit the section "[How to add an editor](/docs/interviewer/add-editor-support)" if you wish to contribute and add support
 for other terminal emulators.
 :::
 
@@ -163,7 +163,7 @@ preferred language.
 
 :::note
 Currently the only supported languages are **C++** and **Python**, If you wish to contribute and add support
-for other languages visit the section "[How to add a language](/docs/add-language-support)".
+for other languages visit the section "[How to add a language](/docs/interviewer/add-language-support)".
 :::
 
 ### `languages.<lang>.template: string`
@@ -173,7 +173,7 @@ Path to your competitive programming template for the corresponding `<lang>`.
 Here are some examples of competitive programming templates (if you wish, you can download them and use them):
 
 - [CompetitiveProgrammingTemplate.cpp](https://gitlab.com/searleser97/competitive-programming-reference/-/blob/master/Reference/Coding%20Resources/C++/Competitive%20Programming%20Template.cpp)
-  - This template allows you to print anything like in python with a `debug` function that just works when `debugCommand` is used. See [Debug](/docs/debug) section.
+  - This template allows you to print anything like in python with a `debug` function that just works when `debugCommand` is used. See [Debug](/docs/interviewer/debug) section.
 - [CompetitiveProgrammingTemplate.py](https://gitlab.com/searleser97/competitive-programming-reference/-/blob/master/Reference/Coding%20Resources/Python/Competitive%20Programming%20Template.py)
   - This template includes Fast IO operations for python
 
@@ -198,7 +198,7 @@ For example: If you use codeforces it is convenient that you use the same comman
 
 :::tip
 If you specify the name of the executable file in this command, it will
-be used instead of the default name (same as source file). See [**Test**](/docs/test) section.
+be used instead of the default name (same as source file). See [**Test**](/docs/interviewer/test) section.
 
 **Example:** In `C++` you can use the `-o` flag to specify the name of the executable file that will be created after compilation.
 ```json
@@ -238,12 +238,12 @@ Some debug command examples for `cpp` and `py`:
 You can specify the name of the executable file in the same way you would do it
 in <a href={"#languageslangcommand-string"} style={{color: 'white'}}>`languages.<lang>.command`</a>.
 
-Visit the [**Debug**](/docs/debug) section to see usage examples of this feature.
+Visit the [**Debug**](/docs/interviewer/debug) section to see usage examples of this feature.
 :::
 
 ### `languages.<lang>.aliases: Object<OnlineJudgeName, string>`
 
-Language "aliases" for each OnlineJudge. See [How To Configure Language Aliases](/docs/submit#how-to-configure-language-aliases).
+Language "aliases" for each OnlineJudge. See [How To Configure Language Aliases](/docs/interviewer/submit#how-to-configure-language-aliases).
 
 For example: the alias for `C++` in Codeforces and AtCoder is `"54"` and `"4006"` respectively
 
