@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[28],{97:function(s){s.exports=JSON.parse('{"allTagsPath":"/otter-guides/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/otter-guides/blog/tags/docusaurus"}')}}]);
