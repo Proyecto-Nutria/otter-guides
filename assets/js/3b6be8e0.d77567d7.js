@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{82:function(o){o.exports=JSON.parse('{"allTagsPath":"/otter-guides/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/otter-guides/blog/tags/facebook"}')}}]);
