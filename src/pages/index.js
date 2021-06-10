@@ -7,7 +7,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Translate from '@docusaurus/Translate';
 import styles from "./styles.module.css";
 
-const features = [
+const sections = [
   {
     keyword: "interviewer",
     title: "Interviewer Guides",
@@ -24,11 +24,11 @@ const features = [
   },
 ];
 
-function Feature({ keyword, imageUrl, title, description, to, className }) {
+function Section({ keyword, imageUrl, title, description, to, className }) {
   const imgUrl = useBaseUrl(imageUrl);
   const toUrl = useBaseUrl(to);
   return (
-    <div className={clsx("col col--4", styles.feature)}>
+    <div className={clsx("col col--4", styles.section)}>
       {imgUrl && (
         <div className={clsx("text--center")}>
           <a href={toUrl}>
@@ -36,10 +36,14 @@ function Feature({ keyword, imageUrl, title, description, to, className }) {
           </a>
         </div>
       )}
-      <h3>{title}</h3>
+      <h3><Translate
+        id={`homepage.${keyword}.title`}
+        description={`The homepage card title related to ${keyword}`}>
+        {title}
+      </Translate></h3>
       <p><Translate
-        id={`homepage.${keyword}`}
-        description={`The homepage card related to ${keyword}`}>
+        id={`homepage.${keyword}.description`}
+        description={`The homepage card descriptin related to ${keyword}`}>
         {description}
       </Translate></p>
     </div>
@@ -52,7 +56,7 @@ export default function Home() {
   return (
     <Layout description={`${siteConfig.title}`}>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className={clsx("featuresRow_src-pages- row", styles.container)}>
+        <div className={clsx("sectionsRow_src-pages- row", styles.container)}>
           <div className={clsx("col col--8")}>
             <h1
               className={clsx(styles.boldInGreen, styles.title, "hero__title")}
@@ -91,12 +95,12 @@ export default function Home() {
         </div>
       </header>
       <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
+        {sections && sections.length > 0 && (
+          <section className={styles.sections}>
             <div className="container">
-              <div className={clsx(styles.featuresRow, "row")}>
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+              <div className={clsx(styles.sectionsRow, "row")}>
+                {sections.map((props, idx) => (
+                  <Section key={idx} {...props} />
                 ))}
               </div>
             </div>

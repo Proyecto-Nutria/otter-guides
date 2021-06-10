@@ -3,13 +3,21 @@
     "message": "Comenzar",
     "description": "The homepage button to start reading"
   },
-  "homepage.interviewer": {
-    "message": "Guías para conocer lo básico acerca de cómo ser un entrevistador",
-    "description": "The homepage card related to interviewer"
+  "homepage.interviewer.title": {
+    "message": "Guías Entrevistador",
+    "description": "The homepage card titlerelated to interviewee"
   },
-  "homepage.interviewee": {
+  "homepage.interviewer.description": {
+    "message": "Guías para conocer lo básico acerca de cómo ser un entrevistador",
+    "description": "The homepage card descriptin related to interviewer"
+  },
+  "homepage.interviewee.title": {
+    "message": "Guías Entrevistado",
+    "description": "The homepage card title related to interviewee"
+  },
+  "homepage.interviewee.description": {
     "message": "Guía para aprender como lucirte en tu entrevista",
-    "description": "The homepage card related to interviewee"
+    "description": "The homepage card descriptin related to interviewee"
   },
   "theme.NotFound.title": {
     "message": "Página no encontrada",

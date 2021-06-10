@@ -21,14 +21,14 @@
   flex-direction: column;
 }
 
-.features {
+.sections {
   display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.featuresRow {
+.sectionsRow {
   align-items: center;
   justify-content: center;
 }
