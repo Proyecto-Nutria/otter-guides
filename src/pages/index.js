@@ -4,106 +4,27 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import Translate from '@docusaurus/Translate';
 import styles from "./styles.module.css";
 
 const features = [
   {
-    title: "Clone Contests",
-    imageUrl: "img/demos/clone.gif",
-    description: (
-      <>
-        Automatically clone sample testcases and create source files preloaded
-        with your favorite template,
-      </>
-    ),
-    to: "docs/interviewer/clone",
+    keyword: "interviewer",
+    title: "Interviewer Guides",
+    imageUrl: "img/interviewer.jpg",
+    description: "Guides to know the basics about being an interviewer",
+    to: "interviewer/about",
   },
   {
-    title: "Test",
-    imageUrl: "img/demos/test_wa.gif",
-    description: (
-      <>
-        Test your code against sample testcases quickly and with a pretty
-        output.
-        <br />
-        Supported Veredicts: <b>AC, WA, TLE, RTE, CE</b>
-      </>
-    ),
-    to: "docs/interviewer/test",
-  },
-  {
-    title: "Debug",
-    imageUrl: "img/demos/debug_keyboard.gif",
-    description: (
-      <>
-        Run code with your own debugging flags easily. Input can be from the
-        keyboard or from a test case file
-      </>
-    ),
-    to: "docs/interviewer/debug",
-  },
-  {
-    title: "Add Test Cases",
-    imageUrl: "img/demos/add-test-case.gif",
-    description: (
-      <>
-        Add a test case for the specified source code file. It will prompt you
-        for the input and the expected output
-      </>
-    ),
-    to: "docs/interviewer/add-test-case",
-  },
-  {
-    title: "Submit",
-    imageUrl: "img/demos/submit.gif",
-    description: (
-      <>
-        Submit your code to online judges pretty fast by just running a single
-        command.
-      </>
-    ),
-    to: "docs/interviewer/submit",
-  },
-  {
-    title: "Create Files With Template",
-    imageUrl: "img/demos/create.gif",
-    description: (
-      <>Create source files with the corresponding template loaded</>
-    ),
-    to: "docs/interviewer/create",
-  },
-  {
-    title: "Flat File Structure",
-    imageUrl: "img/demos/flat-file-structure.gif",
-    description: (
-      <>
-        Having a flat file structure gives us <b>speed!</b>. See{" "}
-        <a href="docs/interviewer/clone#why-flat-file-structure">
-          Why Flat File Structure?
-        </a>
-        .
-      </>
-    ),
-    to: "docs/interviewer/clone#file-structure",
-  },
-  {
-    title: "Vim / Neovim Plugin",
-    imageUrl: "img/vim-icon.png",
-    description: (
-      <>
-        Vim / Neovim users can install{" "}
-        <Link to="https://github.com/searleser97/cpbooster.vim">
-          cpbooster.vim
-        </Link>{" "}
-        plugin to boost their speed even more.
-      </>
-    ),
-    to: "docs/interviewee/vim",
-    className: styles.vim_img,
+    keyword: "interviewee",
+    title: "Interviewee Guides",
+    imageUrl: "img/interviewee.jpg",
+    description: "Guides to learn how to crack your interview",
+    to: "interviewee/about",
   },
 ];
 
-function Feature({ imageUrl, title, description, to, className }) {
+function Feature({ keyword, imageUrl, title, description, to, className }) {
   const imgUrl = useBaseUrl(imageUrl);
   const toUrl = useBaseUrl(to);
   return (
@@ -116,7 +37,11 @@ function Feature({ imageUrl, title, description, to, className }) {
         </div>
       )}
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p><Translate
+        id={`homepage.${keyword}`}
+        description={`The homepage card related to ${keyword}`}>
+        {description}
+      </Translate></p>
     </div>
   );
 }
@@ -128,7 +53,7 @@ export default function Home() {
     <Layout description={`${siteConfig.title}`}>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className={clsx("featuresRow_src-pages- row", styles.container)}>
-          <div className={clsx("col col--4")}>
+          <div className={clsx("col col--8")}>
             <h1
               className={clsx(styles.boldInGreen, styles.title, "hero__title")}
             >
@@ -139,6 +64,8 @@ export default function Home() {
                 <iframe
                   className={styles.indexCtasGitHubButton}
                   src="https://ghbtns.com/github-btn.html?user=proyecto-nutria&amp;repo=otter-guides&amp;type=star&amp;count=true&amp;size=large"
+                  frameBorder={0}
+                  scrolling={0}
                   width={160}
                   height={30}
                   title="GitHub Stars"
@@ -147,17 +74,19 @@ export default function Home() {
               <div style={{ height: "18px" }} />
               <Link
                 className={clsx(styles.getStartedButton)}
-                to={useBaseUrl("docs/interviewee/About")}
+                to={useBaseUrl("introduction")}
               >
-                Get Started
+                <Translate
+                  id="homepage.start"
+                  description="The homepage button to start reading">
+                  Get Started
+                </Translate>
+                &nbsp;&nbsp;→
               </Link>
             </div>
           </div>
-          <div className={clsx("text--center", "col col--6", styles.demo_gif)}>
-            <video controls style={{ maxWidth: "100%" }}>
-              <source src="img/demos/video_demo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div className={clsx("text--center", "col col--3")}>
+            <img src={'img/otter-smart.png'} alt={'Otter Smart'} />
           </div>
         </div>
       </header>

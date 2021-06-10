@@ -1,10 +1,5 @@
 /* stylelint-disable docusaurus/copyright-header */
 
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   padding: 5rem 0;
   text-align: center;
@@ -38,23 +33,6 @@
   justify-content: center;
 }
 
-.vim_img {
-  height: auto;
-  width: auto;
-}
-
-@media screen and (min-width: 997px) {
-  .vim_img {
-    max-height: 250px;
-  }
-}
-
-@media screen and (max-width: 996px) {
-  .vim_img {
-    max-height: 500px;
-  }
-}
-
 .getStartedButton {
   border: 2px solid var(--ifm-color-primary);
   display: inline-block;
@@ -78,22 +56,10 @@
   white-space: nowrap;
 }
 
-.subtitle {
-  font-size: 35px;
-  white-space: nowrap;
-}
-
 @media screen and (max-width: 320px) {
   .title {
     font-size: 60px;
   }
-  .subtitle {
-    font-size: 30px;
-  }
-}
-
-.demo_gif {
-  display: flex;
 }
 
 .container {

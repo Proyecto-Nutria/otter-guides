@@ -7,19 +7,35 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "proyecto-nutria", // Usually your GitHub org/user name.
-  projectName: "otter-guides", // Usually your repo name.
+  organizationName: "proyecto-nutria",
+  projectName: "otter-guides",
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      es: {
+        label: 'Español',
+      },
+    },
+  },
   themeConfig: {
     colorMode: {
       defaultMode: "dark",
     },
     navbar: {
       title: "otter-guides",
+      logo: {
+        alt: 'Proyecto Nutria Logo',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           type: "doc",
           position: "left",
-          docId: "interviewer/clone",
+          docId: "interviewer/about",
           label: "Interviewer",
         },
         {
@@ -27,6 +43,10 @@ module.exports = {
           position: "left",
           docId: "interviewee/about",
           label: "Interviewee",
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           href: "https://github.com/proyecto-nutria/otter-guides",
@@ -37,6 +57,11 @@ module.exports = {
     },
     footer: {
       style: "dark",
+      logo: {
+        alt: 'Proyecto Nutria Logo',
+        src: 'img/icon-70x70.png',
+        href: 'https://proyectonutria.com/',
+      },
       copyright: `Copyright © ${new Date().getFullYear()} Proyecto Nutria. Built with Docusaurus.`,
     },
   },
@@ -45,23 +70,13 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
+          path: './docs',
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/proyecto-nutria/otter-guides",
-        },
-        interviewer: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/proyecto-nutria/otter-guides",
-        },
-        interviewee: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
           editUrl: "https://github.com/proyecto-nutria/otter-guides",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/proyecto-nutria/otter-guides",
         },
         theme: {
