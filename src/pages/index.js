@@ -13,14 +13,14 @@ const sections = [
     title: "Interviewer Guides",
     imageUrl: "img/interviewer.jpg",
     description: "Guides to know the basics about being an interviewer",
-    to: "interviewer/about",
+    to: "interview/interviewer/about",
   },
   {
     keyword: "interviewee",
     title: "Interviewee Guides",
     imageUrl: "img/interviewee.jpg",
     description: "Guides to learn how to crack your interview",
-    to: "interviewee/about",
+    to: "interview/interviewee/about",
   },
 ];
 
