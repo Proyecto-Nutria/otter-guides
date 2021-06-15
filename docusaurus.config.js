@@ -35,14 +35,8 @@ module.exports = {
         {
           type: "doc",
           position: "left",
-          docId: "interviewer/about",
-          label: "Interviewer",
-        },
-        {
-          type: "doc",
-          position: "left",
-          docId: "interviewee/about",
-          label: "Interviewee",
+          docId: "interview/about",
+          label: "Interview",
         },
         {
           type: 'localeDropdown',

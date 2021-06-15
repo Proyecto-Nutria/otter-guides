@@ -3,12 +3,8 @@
     "message": "otter-guides",
     "description": "The title in the navbar"
   },
-  "item.label.Interviewer": {
-    "message": "Entrevistador",
-    "description": "Navbar item with label Interviewer"
-  },
-  "item.label.Interviewee": {
-    "message": "Entrevistado",
-    "description": "Navbar item with label Interviewee"
+  "item.label.Interview": {
+    "message": "Entrevista",
+    "description": "Navbar item with label Interview"
   }
 }

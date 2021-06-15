@@ -2,5 +2,13 @@
   "version.label": {
     "message": "Siguiente",
     "description": "The label for version current"
+  },
+  "sidebar.interview.category.Interviewee": {
+    "message": "Entrevistado",
+    "description": "The label for category Interviewee in sidebar interview"
+  },
+  "sidebar.interview.category.Interviewer": {
+    "message": "Entrevistador",
+    "description": "The label for category Interviewer in sidebar interview"
   }
 }
