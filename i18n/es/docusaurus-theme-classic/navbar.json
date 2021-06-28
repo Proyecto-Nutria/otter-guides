@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "otter-guides",
+    "description": "The title in the navbar"
+  },
+  "item.label.Interview": {
+    "message": "Entrevista",
+    "description": "Navbar item with label Interview"
+  }
+}
