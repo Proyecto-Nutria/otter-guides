@@ -17,7 +17,10 @@ module.exports = {
     {
       type: 'category',
       label: 'Interviewer',
-      items: ['interview/interviewer/about'],
+      items: [
+        'interview/interviewer/about',
+        'interview/interviewer/coding-interview',
+      ],
     },
   ],
 };
