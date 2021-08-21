@@ -1,9 +1,7 @@
 module.exports = {
-  docs: [
-    "introduction",
-  ],
+  docs: ['introduction'],
   interview: [
-    "interview/about",
+    'interview/about',
     {
       type: 'category',
       label: 'Interviewee',
@@ -17,10 +15,20 @@ module.exports = {
     {
       type: 'category',
       label: 'Interviewer',
-      items: [
-        'interview/interviewer/about',
-        'interview/interviewer/coding-interview',
-      ],
+      items: ['interview/interviewer/about', 'interview/interviewer/coding-interview'],
+    },
+  ],
+  yaos: [
+    'yaos/about',
+    {
+      type: 'category',
+      label: 'Interviewee',
+      items: ['yaos/interviewee/about'],
+    },
+    {
+      type: 'category',
+      label: 'Interviewer',
+      items: ['yaos/interviewer/about'],
     },
   ],
 };
