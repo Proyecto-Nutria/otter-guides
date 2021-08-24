@@ -23,7 +23,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Interviewee',
-      items: ['yaos/interviewee/about'],
+      items: ['yaos/interviewee/about', 'yaos/interviewee/mock-interview'],
     },
     {
       type: 'category',
