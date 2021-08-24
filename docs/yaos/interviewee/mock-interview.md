@@ -1,6 +1,6 @@
 ---
 id: mock-interview
-title: Interviewee
+title: Mock interview
 ---
 
 # Proyecto Nutria
