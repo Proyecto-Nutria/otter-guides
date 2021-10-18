@@ -28,7 +28,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Interviewer',
-      items: ['yaos/interviewer/about'],
+      items: ['yaos/interviewer/login', 'yaos/interviewer/upload-profile', 'yaos/interviewer/mock-interview'],
     },
   ],
 };
