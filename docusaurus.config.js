@@ -85,4 +85,7 @@ module.exports = {
       },
     ],
   ],
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400",
+  ],
 };
