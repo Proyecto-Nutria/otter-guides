@@ -7,6 +7,7 @@ module.exports = {
       label: 'Interviewee',
       items: [
         'interview/interviewee/about',
+        'interview/interviewee/introductions',
         'interview/interviewee/behavioral',
         'interview/interviewee/coding',
         'interview/interviewee/ask-anything',
