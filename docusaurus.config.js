@@ -86,6 +86,6 @@ module.exports = {
     ],
   ],
   stylesheets: [
-    "https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700",
+    "https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700",
   ],
 };

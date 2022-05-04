@@ -9,7 +9,7 @@
   --ifm-color-primary-lighter: #57c6ce;
   --ifm-color-primary-lightest: #b8eaea;
   --ifm-color-feedback-background: #f5f6f6;
-  --ifm-font-family: 'Montserrat';
+  --ifm-font-family-base: 'Inter';
 }
 
 .docusaurus-highlight-code-line {
