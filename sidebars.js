@@ -9,7 +9,10 @@ module.exports = {
     'interview/interviewee/technical-qa',
   ],
   interviewee_swe_exercises: [
-    'interview/interviewee/SWE/algorithmic-exercise'
+    'interview/interviewee/SWE/algorithmic-exercise',
+    'interview/interviewee/SWE/oop-exercise',
+    'interview/interviewee/SWE/system-design-exercise',
+    'interview/interviewee/SWE/frontend-exercise'
   ],
   interviewer_prep_guide: [
     'interview/interviewer/about', 'interview/interviewer/coding-interview'
