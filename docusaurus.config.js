@@ -35,8 +35,14 @@ module.exports = {
         {
           type: 'doc',
           position: 'left',
-          docId: 'interview/about',
-          label: 'Interview',
+          docId: 'interview/interviewee/about',
+          label: 'Interviewee',
+        },
+        {
+          type: 'doc',
+          position: 'left',
+          docId: 'interview/interviewer/about',
+          label: 'Interviewer',
         },
         {
           type: 'doc',

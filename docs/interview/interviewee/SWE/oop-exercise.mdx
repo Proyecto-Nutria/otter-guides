@@ -1,0 +1,114 @@
+---
+id: oop-exercise
+title: Object Oriented Programming Exercise
+---
+
+This exercise is quite similar to what you would find in an [Algorithmic Exercise](algorithmic-exercise) with the exception that this one will also focus on your skills to model the problem using object-oriented programming, and in most cases, the problem to solve will be a little bit easier than those presented on an Algorithmic Exercise.
+The time you will be given for this exercise will be around 30 min to 1 hr.
+
+### Example Exercise:
+#### Statement
+Given a binary tree represented with internal nodes and leaf nodes, print the value contained in all the leaf nodes.
+
+- A LeafNode is a node that does not have any children and that contains an integer value
+
+- An InternalNode is a node that can have 1 or 2 children nodes that can either be another InternalNode or a Leaf
+
+#### Solution without using OO concepts
+ 
+```js
+class Node {
+    Node left;
+    Node right;
+    int value;
+    Node(int value, Node left, Node right) {
+        this.value = value;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+public class Main {
+    public static void printValuesInBTree(Node node) {           //                 
+        if (node == null) return;                                //        ()
+        if (node.left == null && node.right == null) { // isLeaf //       /  \
+            System.out.println(node.value);                      //     ()    3  
+        } else {                                                 //    /  \
+            printValuesInBTree(node.left);                       //   1   ()
+            printValuesInBTree(node.right);                      //      /
+        }                                                        //     2 
+    }                                                            //                
+
+    public static void main(String[] args) {
+        Node root = new Node(0, new Node(0, new Node(1, null, null), new Node(0, new Node(2, null, null), null)), new Node(3, null, null));
+        printValuesInBTree(root);
+    }
+}
+```
+
+#### Solution using the four pillars of OO: Abstraction, Encapsulation, Inheritance, and Polymorphism
+
+```js
+abstract class Node {
+    // most languages already have a way to retrieve the type of an object
+    // to be generic we are going to use a method that will tell us the type directly
+    abstract String type();
+}
+
+class LeafNode extends Node {
+    private int value;
+
+    LeafNode(int value) {
+        this.value = value;
+    }
+    String type() {
+        return "leaf";
+    }
+    int getValue() {
+        return this.value;
+    }
+}
+
+class InternalNode extends Node {
+    private Node left;
+    private Node right;
+
+    InternalNode(Node left, Node right) {
+        this.left = left;
+        this.right = right;
+    }
+    String type() {
+        return "internal";
+    }
+    Node getLeftNode() {
+        return this.left;
+    }
+    Node getRightNode() {
+        return this.right;
+    }
+}
+
+public class Main {
+    public static void printValuesInBTree(Node node) {           //
+        if (node == null) return;                                //        ()
+        if (node.type() == "leaf") {                             //       /  \
+            LeafNode leaf = (LeafNode) node;                     //     ()    3  
+            System.out.println(leaf.getValue());                 //    /  \
+        } else {                                                 //   1   ()
+            InternalNode internalNode = (InternalNode) node;     //      /
+            printValuesInBTree(internalNode.getLeftNode());      //     2 
+            printValuesInBTree(internalNode.getRightNode());     //                
+        }
+    }
+
+
+    public static void main(String[] args) {
+        Node root = new InternalNode(new InternalNode(new LeafNode(1), new InternalNode(new LeafNode(2), null)), new LeafNode(3));
+        printValuesInBTree(root);
+    }
+}
+```
+
+### General Tips to succeed in the Object Oriented Design Exercise
+- Follow the flow diagram and tips presented in [Algorithmic Exercise](algorithmic-exercise) during the interview
+- Study more [Design Patterns](https://refactoring.guru/design-patterns)

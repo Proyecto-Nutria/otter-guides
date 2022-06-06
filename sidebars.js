@@ -1,22 +1,21 @@
 module.exports = {
   docs: ['introduction'],
-  interview: [
-    'interview/about',
-    {
-      type: 'category',
-      label: 'Interviewee',
-      items: [
-        'interview/interviewee/about',
-        'interview/interviewee/behavioral',
-        'interview/interviewee/coding',
-        'interview/interviewee/ask-anything',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Interviewer',
-      items: ['interview/interviewer/about', 'interview/interviewer/coding-interview'],
-    },
+  interviewee_prep_guide: [
+    'interview/interviewee/about',
+    'interview/interviewee/introductions',
+    'interview/interviewee/technical-exercise',
+    'interview/interviewee/ask-anything',
+    'interview/interviewee/behavioral',
+    'interview/interviewee/technical-qa',
+  ],
+  interviewee_swe_exercises: [
+    'interview/interviewee/SWE/algorithmic-exercise',
+    'interview/interviewee/SWE/oop-exercise',
+    'interview/interviewee/SWE/system-design-exercise',
+    'interview/interviewee/SWE/frontend-exercise'
+  ],
+  interviewer_prep_guide: [
+    'interview/interviewer/about', 'interview/interviewer/coding-interview'
   ],
   yaos: [
     'yaos/about',
