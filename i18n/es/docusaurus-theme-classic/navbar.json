@@ -1,15 +1,11 @@
 {
   "title": {
-    "message": "otter-guides",
+    "message": "Otter Guides",
     "description": "The title in the navbar"
   },
-  "item.label.Interview": {
-    "message": "Entrevista",
-    "description": "Navbar item with label Interview"
-  },
-  "item.label.YAOS": {
-    "message": "YAOS",
-    "description": "Navbar item with label YAOS"
+  "logo.alt": {
+    "message": "Proyecto Nutria Logo",
+    "description": "The alt text of navbar logo"
   },
   "item.label.Interviewee": {
     "message": "Entrevistado",

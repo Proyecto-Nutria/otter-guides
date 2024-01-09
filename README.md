@@ -1,11 +1,11 @@
 # Website
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
 
 ```console
-yarn install
+yarn
 ```
 
 ## Local Development
@@ -14,7 +14,7 @@ yarn install
 yarn start
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ```console
 yarn start -- --locale es
@@ -51,7 +51,7 @@ Any change made into the files need to be updated manually, to keep your transla
 ### JSON translations
 
 ```console
-yarn run write-translations -- --locale es
+yarn write-translations -- --locale es
 ```
 
 This command will run again the [write-translations](https://docusaurus.io/docs/cli#docusaurus-write-translations) CLI command to maintain the JSON translation files (for buttons, sidebar, navbar, etc.).
@@ -72,8 +72,16 @@ This command makes the same than previous one, but generates static content for 
 
 ## Deployment
 
+Using SSH:
+
 ```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```console
+GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

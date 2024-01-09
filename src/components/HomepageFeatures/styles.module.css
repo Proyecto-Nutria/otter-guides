@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featuresRow {
+  align-items: center;
+  justify-content: center;
+}
+
+.featureCard h3 {
+  line-height: 1em;
+  height: 1em;
+  overflow: hidden;
+}
+
+.featureCard p {
+  line-height: 1.2em;
+  height: 3.6em;
+  overflow: hidden;
+}
+
+.featureImage {
+  width: 350px;
+  object-fit: cover;
+}
