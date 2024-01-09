@@ -10,5 +10,13 @@
   "item.label.YAOS": {
     "message": "YAOS",
     "description": "Navbar item with label YAOS"
+  },
+  "item.label.Interviewee": {
+    "message": "Entrevistado",
+    "description": "Navbar item with label Interviewee"
+  },
+  "item.label.Interviewer": {
+    "message": "Entrevistador",
+    "description": "Navbar item with label Interviewer"
   }
 }
