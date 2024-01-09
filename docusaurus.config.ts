@@ -1,14 +1,20 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
-  title: 'otter-guides',
-  tagline: 'otter-guides',
-  url: 'https://proyecto-nutria.io',
-  baseUrl: '/otter-guides/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const config: Config = {
+  title: 'Otter Guides',
+  tagline: 'Just otter guides',
   favicon: 'img/favicon.ico',
+
+  url: 'https://proyectonutria.com/',
+  baseUrl: '/otter-guides/',
   organizationName: 'proyecto-nutria',
   projectName: 'otter-guides',
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es'],
@@ -21,12 +27,33 @@ module.exports = {
       },
     },
   },
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          path: './docs',
+          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/proyecto-nutria/otter-guides',
+        },
+        blog: {
+          showReadingTime: true,
+          editUrl: 'https://github.com/proyecto-nutria/otter-guides',
+        },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+
   themeConfig: {
-    colorMode: {
-      defaultMode: 'dark',
-    },
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'otter-guides',
+      title: 'Otter Guides',
       logo: {
         alt: 'Proyecto Nutria Logo',
         src: 'img/logo.svg',
@@ -43,12 +70,6 @@ module.exports = {
           position: 'left',
           docId: 'interview/interviewer/about',
           label: 'Interviewer',
-        },
-        {
-          type: 'doc',
-          position: 'left',
-          docId: 'yaos/about',
-          label: 'YAOS',
         },
         {
           type: 'localeDropdown',
@@ -70,28 +91,15 @@ module.exports = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} Proyecto Nutria. Built with Docusaurus.`,
     },
-  },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          path: './docs',
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/proyecto-nutria/otter-guides',
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: 'https://github.com/proyecto-nutria/otter-guides',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
+
   stylesheets: [
     "https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700",
   ],
 };
+
+export default config;

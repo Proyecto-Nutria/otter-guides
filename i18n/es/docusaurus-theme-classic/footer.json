@@ -1,6 +1,10 @@
 {
   "copyright": {
-    "message": "Copyright © 2021 Proyecto Nutria. Hecho con Docusaurus.",
+    "message": "Copyright © 2024 Proyecto Nutria. Hecho con Docusaurus.",
     "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "Proyecto Nutria Logo",
+    "description": "The alt text of footer logo"
   }
 }
